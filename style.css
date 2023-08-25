@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  background-color: #fff9f9;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  display: flex;
+  background-color: #fff9f9;
+}
+
+.contain {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  gap: 50px;
+  padding-left: 150px;
+  width: 1000px;
+}
+h1 {
+  color: #413a3a;
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  padding-top: 80px;
+}
+
+.detalhe {
+  color: #f29f9f;
+  font-weight: 300;
+}
+p {
+  color: #f29f9f;
+  width: 500px;
+}
+.logo {
+  width: 200px;
+}
+
+.hero {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contain-img {
+  height: 100vh;
+  width: 1000px;
+  padding-left: 200px;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  padding: 15px;
+  border-radius: 40px 0px 0px 40px;
+  border: 1px solid #f29f9f;
+  color: #413a3a;
+  outline: none;
+  width: 350px;
+  font-size: 1.2rem;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: #f29f9f;
+  padding-left: 20px;
+}
+
+button {
+  padding: 25px 50px;
+  border: 1px solid #f29f9f;
+  background-color: #ef9494;
+  border-radius: 70px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #413a3a;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-top: -50px;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+button.error {
+  background-color: red;
+}
+
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contain {
+    width: 100%;
+    padding-left: 0px;
+    gap: 30px;
+  }
+
+  .contain-img {
+    display: none;
+  }
+  .logo {
+    padding-top: 50px;
+    margin-left: 50px;
+  }
+  .hero-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  h1 {
+    padding-top: 40px;
+    margin-left: 50px;
+  }
+  p {
+    width: 500px;
+    padding-left: 50px;
+  }
+  form {
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .error-message {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+  input {
+    padding: 5px;
+  }
+}
